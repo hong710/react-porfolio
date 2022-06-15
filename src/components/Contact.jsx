@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactForm from './subcomponents/ContactForm'
 import TitleSection from './subcomponents/TitleSection'
-import programming from '../assets/programming.png';
+import mailBox from '../assets/mailbox.png';
 import SocialMedia from './subcomponents/SocialMedia';
 import Footer from './Footer';
 
@@ -18,7 +18,7 @@ function Contact() {
                     <ContactForm />
                 </div>
                 <div className='justify-self-center'>
-                <img src={programming} width='300' height='350' alt='programing'  />
+                <img src={mailBox} width='300' height='350' alt='mailbox'   />
                 </div>
             </div>
             <div className='flex justify-center py-8'>
