@@ -1,5 +1,7 @@
 import React from 'react';
 import profile from '../assets/profile.png';
+import { Link } from 'react-scroll';
+import {motion} from 'framer-motion';
 
 
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi';
@@ -8,10 +10,14 @@ function Hero() {
 	return (
 		<div id= '/' className='w-full h-screen text-center md:text-left pt-20 hero '
 		>
-			
 			<div className='flex my-container w-full h-full items-center '>
 				<div className='grid grid-cols-1 px-4 md:grid-cols-3'>	 
-					<div className='md:col-span-2 md:self-center'>
+					<motion.div className='md:col-span-2 md:self-center'
+						animate={{
+							scale:[0,1]
+						}}
+						transition={{ duration: 1 }}
+					>
 						<p className='uppercase text-sm tracking-widest text-gray-600 py-4 dark:text-darkFont'>
 							Let&apos;s build something together
 						</p>			
@@ -32,23 +38,32 @@ function Hero() {
 						'>
 							{/* <SocialMedia custom={'p-4'}/> */}
 
+							<Link to='projects'  activeClass="active" spy={true} smooth={true} offset={-40} duration={500}>
 							<div className='
 							mx-auto md:mx-0 border py-2 px-4 cursor-pointer tracking-wide
 							dark:border-darkGradient2 
 							dark:hover:gradientBgReverse
 							dark:hover:border-darkMode
-							
 							'>
 								View Work 
 								<HiOutlineArrowNarrowRight
 									className='inline ml-2'
 								/>
+								
 							</div>
+							</Link>
 						</div>
-					</div>
-					<div className="w-48 md:w-auto  mx-auto pt-4 md:pt-0 ">	
+					</motion.div>
+					<motion.div className="w-48 md:w-auto  mx-auto pt-4 md:pt-0 "
+						
+						animate={{
+							scale:[0,1]
+						}}
+						transition={{ duration: 1 }}
+
+					>	
 						<img src={profile} className='rounded-full' alt='programming'  />
-					</div>
+					</motion.div>
 				</div>				
 			</div>
 		</div>

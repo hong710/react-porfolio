@@ -3,6 +3,7 @@ import Logo from './subcomponents/Logo';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import {Link} from "react-scroll";
 import SocialMedia from './subcomponents/SocialMedia';
+import {motion} from 'framer-motion'
 
 
 const Navbar = () => {
@@ -20,7 +21,12 @@ const Navbar = () => {
      px-4  2xl:px-16 hero bg-slate-900 `}
     >
         <div className='flex justify-between items-center w-full h-full my-container'>
-            <div className=''><Logo/></div>
+            <motion.div
+                animate={{rotate:360}}
+                transition={{ duration: 2 }}
+            >
+                <Logo/>
+            </motion.div>
             <div>
                 <ul className='hidden sm:flex '>
                     {
