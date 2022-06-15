@@ -5,7 +5,7 @@ function SkillsItem({item, name}) {
             dark:shadow-stone-900 dark:bg-neutral-800'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <img src={item} width='64px' height='64px' about=' ' />
+                    <img src={item} width='64px' height='64px' alt={name}/>
                 </div>
 
                 <div className='flex flex-col items-center justify-center'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../assets/banner.png';
+import banner from '../assets/programming.png';
 import {Link} from 'react-scroll';
 import {FaAnchor} from 'react-icons/fa';
 import TitleSection from './subcomponents/TitleSection';
@@ -33,7 +33,7 @@ function About() {
                 
             </div>
 
-            <div className='max-w-[100%] md:max-w-[80%] lg:max-w-[100%] py-16 flex mx-auto lg:block lg:py-32'>
+            <div className='max-w-[100%] md:max-w-[80%] lg:max-w-[100%] py-16 flex mx-auto lg:block lg:py-24'>
                 <img src={banner} alt="computer" className='rounded-xl'/>
             </div>
         </div>
