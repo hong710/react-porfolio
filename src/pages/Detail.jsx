@@ -51,11 +51,13 @@ function Detail() {
                     </p>
 
                     <div className='my-8'>
-                        <buton className='button p-4 my-4 capitalize mr-8'>
-                            Visit the website
-                        </buton>
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                            <buton className='button p-4 my-4 capitalize mr-8'>
+                                Visit the website
+                            </buton>
+                        </a>
                         <a href={project.github} target="_blank" rel="noreferrer">
-                        <buton className='button p-4 my-4 capitalize'>
+                            <buton className='button p-4 my-4 capitalize'>
                             GitHub
                         </buton>
                         </a>
