@@ -1,11 +1,11 @@
-import {project1,project2,project3,project4} from '../assets/projects';
+import {project1} from '../assets/projects';
 
  export const projects =[
     {
         id:'1',
         name:"React-movies",
         description: ['React.js', 'sass', 'Axios', 'API'],
-        img: project2,
+        img: project1,
         details:"React-movies is a fully responsive and sleek Movie App built using react library. Users can search for their favorite movies by filtering from an array of categories, watching the trailer for that movie, and choosing movies from different categories.  ",
         link:"https://react-movie-anthony.netlify.app/",
         github:"https://github.com/hong710/react-movies-TMDB"
