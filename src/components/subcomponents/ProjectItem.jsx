@@ -16,10 +16,12 @@ function ProjectItem({project}) {
             />
             <div className='hidden group-hover:block absolute'>
                 <h3 className='text-center text-slate-200 text-2xl tracking-wider'>{project.name}</h3>
-                <p className='text-center text-slate-200 my-6'>{project.description}</p>
+                {project.description.map((item)=>
+                    <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-primary text-white rounded-full mr-2">{item}</span>
+                )}
                 <Link to={`/project/${project.id}`}>
                     <p className='text-center text-slate-700 bg-slate-200 p-3
-                        text-lg cursor-pointer rounded-xl
+                        text-lg cursor-pointer rounded-xl mt-2
                         
                         '><AiOutlineLink className='inline'/> More Info
                     </p>
