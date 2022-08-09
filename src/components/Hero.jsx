@@ -27,16 +27,15 @@ function Hero() {
 						
 
 						<h2 className=' py-2 text-gray-700 dark:text-darkFont tracking-wider text-3xl lg:text-5xl'>
-							I&apos;m a Full Stack Developer.
+							I&apos;m a Front-end Developer.
 						</h2>
 						<p className='py-2 text-gray-600 sm:max-w-[80%] md:max-w-[90%] lg:max-w-[70%] mx-auto md:mx-0 					text-sm md:text-base dark:text-darkFont lg:text-lg 2xl:text-xl'
 						>
-							I&apos;m a full-stack developer specializing in building efficient web applications using React.js, Node.js, and Ruby on Rails that work across all platforms and browsers.
+							I&apos;m a front-end developer specializing in building efficient web applications using React.js, Node.js, and Ruby on Rails that work across all platforms and browsers.
 						</p>
 
 						<div className='flex items-center justify-between py-4 
 						'>
-							{/* <SocialMedia custom={'p-4'}/> */}
 
 							<Link to='projects'  activeClass="active" spy={true} smooth={true} offset={-40} duration={500}>
 							<div className='

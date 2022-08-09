@@ -14,7 +14,7 @@ function About() {
             <div className='col-span-2 text-sm md:text-base dark:text-darkFont lg:text-lg 2xl:text-xl'>
                 <TitleSection title={'About'} text={'Who I am'}/>
                 <p className='text-gray-600 py-2 dark:text-gray-50 '>
-                    I am a Software engineer and <FaAnchor className='inline text-blue-700'/> U.S Navy veteran.
+                    I am a front-end web developer and <FaAnchor className='inline text-blue-700'/> U.S Navy veteran.
                 </p> 
                 <p className='text-gray-600 py-2 dark:text-gray-50'>
 					While serving in the Navy as a Medical Technician, I always had a passion for coding and made a plan for myself to be a Software Engineer. After separation, I went to the Coding Bootcamp and recently graduated from   
